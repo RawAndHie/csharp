@@ -9,6 +9,12 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Button x:Name="ClickMeButton" Content="Click Me" Height="154" Width="326" FontSize="50" HorizontalAlignment="Center" DoubleTapped="ClickMeButton_DoubleTapped" Click="ClickMeButton_Click" Margin="0,380,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Text_box" Text=" Text Box" TextWrapping="Wrap" Margin="359,64,390,448" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" FontSize="64">
+            <TextBox.RenderTransform>
+                <CompositeTransform Rotation="0.311"/>
+            </TextBox.RenderTransform>
+        </TextBox>
 
     </Grid>
 </Page>

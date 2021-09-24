@@ -26,5 +26,15 @@ namespace Task_2
         {
             this.InitializeComponent();
         }
+
+        private void ClickMeButton_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
+        {
+            
+        }
+
+        private void ClickMeButton_Click(object sender, RoutedEventArgs e)
+        {
+            Text_box.Text = "Clicked";
+        }
     }
 }
