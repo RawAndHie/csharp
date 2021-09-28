@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="U13.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:U13"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Lorem Ipsum" FontSize="50" />
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Width="250" TextWrapping="Wrap">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis est accumsan, tincidunt urna nec, molestie ex. Proin facilisis turpis id suscipit venenatis. Sed at sem sed odio scelerisque ultricies at ut sem. Nulla vitae dui ut elit aliquam consequat. Integer ullamcorper erat sed nunc pharetra, eget eleifend ex egestas. Proin ultricies consequat scelerisque. Mauris sagittis gravida ex eget laoreet. In in neque hendrerit, posuere augue eget, sollicitudin sapien. Nam eget erat hendrerit, venenatis lacus vitae, varius lectus. Sed nisl est, tincidunt eu consequat a, posuere non nulla. Nunc non tellus vulputate, mattis quam in, imperdiet nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean facilisis cursus nisi a commodo. Cras vulputate vulputate ligula non fringilla. Donec tortor diam, efficitur sit amet nunc ac, sollicitudin dignissim mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                </TextBlock>
+                <TextBlock Width="500" TextWrapping="Wrap">
+                    Sed nec ipsum orci. Morbi faucibus, dui in vehicula semper, quam nulla feugiat augue, eu accumsan metus eros non felis. Aliquam erat volutpat. Duis id ipsum at sapien porta tristique sed sed lectus. In imperdiet ipsum orci. Nulla facilisi. Suspendisse mattis, magna vitae lobortis rhoncus, orci leo blandit sem, eget congue urna felis eu leo. Curabitur finibus malesuada nulla. Quisque tortor dolor, tincidunt in tempor sed, ultricies nec lorem. Suspendisse imperdiet velit ut dui ullamcorper, sed vulputate urna maximus. In accumsan turpis nec nulla laoreet blandit. Proin lectus ante, mollis quis quam et, commodo sagittis orci. Cras vestibulum magna ac magna mattis, eget facilisis leo sodales. Curabitur eu nulla faucibus, scelerisque felis id, venenatis tortor. Nunc ac ligula in sapien sollicitudin suscipit. Duis ultricies felis porttitor ipsum lacinia, sit amet ornare turpis tincidunt.
+                    Sed nec ipsum orci. Morbi faucibus, dui in vehicula semper, quam nulla feugiat augue, eu accumsan metus eros non felis. Aliquam erat volutpat. Duis id ipsum at sapien porta tristique sed sed lectus. In imperdiet ipsum orci. Nulla facilisi. Suspendisse mattis, magna vitae lobortis rhoncus, orci leo blandit sem, eget congue urna felis eu leo. Curabitur finibus malesuada nulla. Quisque tortor dolor, tincidunt in tempor sed, ultricies nec lorem. Suspendisse imperdiet velit ut dui ullamcorper, sed vulputate urna maximus. In accumsan turpis nec nulla laoreet blandit. Proin lectus ante, mollis quis quam et, commodo sagittis orci. Cras vestibulum magna ac magna mattis, eget facilisis leo sodales. Curabitur eu nulla faucibus, scelerisque felis id, venenatis tortor. Nunc ac ligula in sapien sollicitudin suscipit. Duis ultricies felis porttitor ipsum lacinia, sit amet ornare turpis tincidunt.
+                </TextBlock>
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Width="300" Height="300" Fill="Green" VerticalAlignment="Top"/>
+                    <StackPanel>
+                        <Rectangle Width="150" Height="150" Fill="Blue"/>
+                        <Rectangle Width="150" Height="150" Fill="Pink"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
