@@ -1,0 +1,50 @@
+﻿<Page
+    x:Class="U17.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:U17"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+      
+        <RelativePanel>
+            <Button Name="Button" Content="Search" RelativePanel.AlignRightWithPanel="True"
+                    Margin="10,0,0,0"/>
+            <TextBox Name="Search" 
+                     RelativePanel.LeftOf="Button"
+                     Width="200" Margin="10,0,0,0"/>
+            <TextBlock Text="Search: "
+                       RelativePanel.LeftOf="Search" RelativePanel.AlignVerticalCenterWithPanel="True"
+                       Margin="10,0,0,0"/>
+            <TextBlock Text="Title" FontSize="30" 
+                       FontWeight="Bold"/>
+        </RelativePanel>
+        <SplitView Grid.Row="3" Name="SplitPane" Height="300">
+            <SplitView.Pane>
+                <StackPanel>
+                    <TextBlock Text="First" FontSize="30"/>
+                    <TextBlock Text="Second" FontSize="30"/>
+                    <TextBlock Text="Third" FontSize="30"/>
+                </StackPanel>
+            </SplitView.Pane>
+            <SplitView.Content>
+                <StackPanel>
+                    <TextBlock Text="Fourth" FontSize="30"/>
+                    <TextBlock Text="Fifth" FontSize="30"/>
+                    <TextBlock Text="Sixth" FontSize="30"/>
+                </StackPanel>
+            </SplitView.Content>
+        </SplitView>
+        <Button Content="Click Me" Click="click_button" Grid.Row="3" />
+    </Grid>
+</Page>
