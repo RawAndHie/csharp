@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid >
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -16,7 +16,7 @@
             <RowDefinition Height="3*"/>
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
-      
+
         <RelativePanel>
             <Button Name="Button" Content="Search" RelativePanel.AlignRightWithPanel="True"
                     Margin="10,0,0,0"/>
@@ -43,7 +43,7 @@
                     <TextBlock Text="Fifth" FontSize="30"/>
                     <TextBlock Text="Sixth" FontSize="30"/>
                 </StackPanel>
-            </SplitView.Content>
+            </SplitView.Content   >
         </SplitView>
         <Button Content="Click Me" Click="click_button" Grid.Row="3" />
     </Grid>
