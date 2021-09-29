@@ -1,0 +1,61 @@
+﻿<Page
+    x:Class="Task4e1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Task4e1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <TextBlock Text="Title 1" FontSize="100"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <TextBlock FontSize="25" TextWrapping="Wrap">
+                The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum.
+            </TextBlock>
+            <StackPanel Orientation="Horizontal" Width="450" >
+                <Rectangle Height="50" Width="150" Fill="Black" />
+                <Rectangle Height="50" Width="150" Fill="Green"/>
+                <Rectangle Height="50" Width="150" Fill="Red"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <TextBlock Text="Title 2" FontSize="100"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <TextBlock FontSize="25" TextWrapping="Wrap">
+                The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum.
+            </TextBlock>
+            <StackPanel Orientation="Horizontal" Width="450" >
+                <Rectangle Height="50" Width="150" Fill="Black"/>
+                <Rectangle Height="50" Width="150" Fill="Red"/>
+                <Rectangle Height="50" Width="150" Fill="Blue"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="2">
+            <TextBlock Text="Title 3" FontSize="100"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1">
+            <TextBlock FontSize="25" TextWrapping="Wrap">
+                The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum.
+            </TextBlock>
+            <StackPanel Orientation="Horizontal" Width="450" >
+                <Rectangle Height="50" Width="150" Fill="Blue"/>
+                <Rectangle Height="50" Width="150" Fill="Black"/>
+                <Rectangle Height="50" Width="150" Fill="Green"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
