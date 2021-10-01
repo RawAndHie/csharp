@@ -9,16 +9,11 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Page.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary />
-                <ResourceDictionary />
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
+        <SolidColorBrush x:Key="MyBrush" Color="Red"/>
+        <x:String x:Key="MyText">My Button Style Example</x:String>
     </Page.Resources>
-    <StackPanel>
-        <TextBlock/>
-        <Button Content="My Button Style Example"
-                Height="100" />
-    </StackPanel>
+    <Grid>
+        <TextBlock Text="{StaticResource MyText}"
+                Foreground="{StaticResource MyBrush}"/>
+    </Grid>
 </Page>
