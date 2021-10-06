@@ -29,6 +29,7 @@
                    Margin="20,20,0,0" />
         <ListView ItemsSource="{x:Bind Books}" ItemClick="ListView_ItemClick" 
                   IsItemClickEnabled="True" ItemTemplate="{StaticResource BookListDataTemplate}">
+            
         </ListView>
     </Grid>
 </Page>
