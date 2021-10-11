@@ -122,6 +122,9 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Item.cs" />
+    <Compile Include="Model\Music.cs" />
+    <Compile Include="Model\MusicManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -130,6 +133,16 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Img\1phut.jpg" />
+    <Content Include="Assets\Img\2trieunam.png" />
+    <Content Include="Assets\Img\bainaychill.jpg" />
+    <Content Include="Assets\Img\lalung.jpg" />
+    <Content Include="Assets\Img\suytnuathi.jpg" />
+    <Content Include="Assets\Music\1phut.mp3" />
+    <Content Include="Assets\Music\2trieunam.mp3" />
+    <Content Include="Assets\Music\bainaychillphet.mp3" />
+    <Content Include="Assets\Music\lalung.mp3" />
+    <Content Include="Assets\Music\suytnuathi.mp3" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

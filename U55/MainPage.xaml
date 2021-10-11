@@ -39,8 +39,6 @@
 
         <SplitView Name="MySplitView"
                    Grid.Row="1"
-                   DisplayMode="CompactOverlay"
-                   CompactPaneLength="45"
                    >
             <SplitView.Pane>
                 <ListView ItemClick="MenuItemsListView_ItemClick" Name="MenuItemsListView" IsItemClickEnabled="True" 
@@ -68,6 +66,8 @@
                     <GridView Grid.Row="1"
                               Name="SoundGridView"
                               SelectionMode="None"
+                              Drop="SoundGridView_Drop"
+                              DragOver="SoundGridView_DragOver"
                               IsItemClickEnabled="True"
                               ItemsSource="{x:Bind Sounds}"
                               ItemClick="SoundGridView_ItemClick"
