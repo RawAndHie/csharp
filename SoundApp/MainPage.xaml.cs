@@ -71,7 +71,7 @@ namespace SoundApp
         {
             if (String.IsNullOrEmpty(sender.Text)) goBack();
 
-            MusicManager.GetAllMusic(Music);
+                        MusicManager.GetAllMusic(Music);
             Suggestions = Music
                 .Where(p => p.Name.StartsWith(sender.Text))
                 .Select(p => p.Name)

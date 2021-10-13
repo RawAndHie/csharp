@@ -24,7 +24,7 @@
                     RelativePanel.RightOf="HumburgerButton"
                     Click="BackButton_Click"
                     FontFamily="Segoe MDL2 Assets"
-                    Content="&#xE0A6;" FontSize="80"/>
+                    Content="&#xE0A6;" FontSize="80" Margin="10,0,0,0"/>
 
             <AutoSuggestBox Name="SearchAutoSuggestBox"
                             PlaceholderText="Search for sounds"
@@ -37,7 +37,6 @@
         </RelativePanel>
         <SplitView Name="MySplitView"
                    Grid.Row="1"
-                   
                    >
             <SplitView.Pane>
                 <ListView ItemClick="MenuItemsListView_ItemClick" Name="MenuItemsListView" IsItemClickEnabled="True" 
