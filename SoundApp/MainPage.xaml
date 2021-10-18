@@ -44,7 +44,7 @@
                     <ListView.ItemTemplate>
                         <DataTemplate x:DataType="data:Item">
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="{x:Bind Category}" FontSize="40"/>
+                                <TextBlock Text="{x:Bind Category}" FontSize="40" />
                          
                             </StackPanel>
                         </DataTemplate>
@@ -76,7 +76,9 @@
                         <GridView.ItemTemplate >
                             <DataTemplate  x:DataType="data:Music">
                                 <Image Name="MyImage" Height="112" Width="101"  Source="{x:Bind ImageFile}"/>
+                              
                             </DataTemplate>
+                            
                         </GridView.ItemTemplate>
                     </GridView>
                 </Grid>

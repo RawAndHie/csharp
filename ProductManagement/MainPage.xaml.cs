@@ -12,32 +12,33 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using StudentManage.Model;
 using System.Collections.ObjectModel;
-
+using ProductManagement.Model;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
-namespace StudentManage
+namespace ProductManagement
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        private ObservableCollection<Student> ListStudent;
-        private List<Avatar> Avatars;
+        private ObservableCollection<Product> ListProduct;
+        private List<ImageProduct> Images;
+
+
         public MainPage()
         {
             this.InitializeComponent();
-            ListStudent = StudentManager.GetListStudents();
-            Avatars = ItemAvatar.GetAvatars();
+            ListProduct = ProductManager.GetListProduct();
+            Images = ItemImage.GetImages();
         }
 
-        private void NewContactButton_Click(object sender, RoutedEventArgs e)
+        private void ClickButton_Click(object sender, RoutedEventArgs e)
         {
-           
-            ListStudent.Add(new Student { FullName = FullName.Text, BirthDay = BirthDay.Text, Avatar = ((Avatar)AvatarComboBox.SelectedValue).AvatarImage });
+            ListProduct.Add(new Product { Count = ListProduct.Count + 1, Name = Name.Text, Description = Description.Text, Image = ((Image)ImageComboBox.SelectedValue).IconImage });
+
         }
     }
 }
